@@ -38,7 +38,14 @@
    <?php
 					error_reporting('0');
 					//include("db_conf.php");
-					$con=mysqli_connect("127.0.0.1","root","","ethics_system");
+   $db_host = "127.0.0.1:52967";
+   $db_username = "root";
+   $db_password= "";
+   $db_name = "ethics_system";
+
+   $con = mysqli_connect($db_host,$db_username,$db_password,$db_name) or die();
+
+  // $con=mysqli_connect("127","root","","ethics_system");
 // Check connection
 if (mysqli_connect_errno())
   {
