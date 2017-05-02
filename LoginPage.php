@@ -37,7 +37,7 @@
             <p><?php
                 error_reporting('0');
                 //include("db_conf.php");
-                $con= mysqli_connect("127.0.0.1:50106","root","","ethics_system");
+                $con= mysqli_connect("127.0.0.1:56819","root","","ethics_system");
                 // $con= mysqli_connect("127.0.0.1","root","","ethics_system","52967");
 
                 //$con=mysqli_connect("127.0.0.1","root","","ethics_system","52967");
@@ -115,7 +115,7 @@
                         $url='http://localhost:63342/Anna/vik/reemn/HomePageAdmin.php';
                         $username = $_SESSION['gatekeeper'];
 
-                         echo "<meta http-equiv='refresh' content='0;url=http://mnf123.azurewebsites.net/HomePageAdmin.php?gatekeeper=$username'>";
+                         echo "<meta http-equiv='refresh' content='0;url=http://marzoog.azurewebsites.net/HomePageAdmin.php?gatekeeper=$username'>";
                         exit();
                     }
                     else
